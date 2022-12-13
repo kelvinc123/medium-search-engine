@@ -1,19 +1,7 @@
 
 ## Requirements
 
-The dataset will not be submitted to maintain the size of the files. To populate the data, the work directory needs to have *AP_DATA* directory with the following structure:
-
-```
-AP_DATA
-  |- ap89_collection
-  |  |- ap890101
-  |  |- ap890102
-  |  |- ap890103
-  |  |- ...
-  |- dist
-  |- doclist_new_0609.txt
-  |- ...
-```
+The dataset will not be submitted to maintain the size of the files.
 
 The elastic search docker version is used because the non-docker version gives an error. Download Docker Desktop at: https://www.docker.com/products/docker-desktop/
 
