@@ -1,0 +1,29 @@
+<!-- home.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="static/css/search_result.css" />
+  </head>
+  <body>
+    <h1>Search Result:</h1>
+    <ul>
+      {% for result in results %}
+      <li>
+        <div>
+          {% if result.title == "None" %}
+          <a href="{{result.url}}"><h3>Title not available!</h3></a>
+          {% else %}
+          <a href="{{result.url}}"><h3>{{ result.title }}</h3></a>
+          {% endif %}
+          <p>{{ " ".join(result.full_text.split(" ")[:50]) }}</p>
+        </div>
+        <div class="more_info">
+          <h4>Publication: {{ result.publication }}</h4>
+          <div>Claps: {{ result.claps }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+elasticsearch==8.5.0
+beautifulsoup4
+Flask
+Flask-JWT-Extended
+Flask-RESTful
+jinja2
+nltk
+spacy
